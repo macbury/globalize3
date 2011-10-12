@@ -25,8 +25,8 @@ module Globalize
 
         def create_translation_table!(fields = {}, options = {})
           @fields = fields
-          complete_translated_fields
-          validate_translated_fields
+          #complete_translated_fields
+          #validate_translated_fields
 
           create_translation_table
           move_data_to_translation_table if options[:migrate_data]
